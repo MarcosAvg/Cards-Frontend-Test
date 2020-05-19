@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    background: var(--veryLightGray);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--darkBlue: hsl(234, 12%, 34%);
+--grayishBlue: hsl(229, 6%, 66%);
+--veryLightGray: hsl(0, 0%, 94%);
+}
+
+.header{
+    //border: 1px solid red;
+    //padding-top: 40px;
+    text-align: center;
+}
+
+.h1{
+    //border: 1px solid red;
+    padding-top: 100px;
+    font-weight: lighter;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.h2{
+    //border: 1px solid yellow;
+    display: block;
+    margin: 0px;
+}
+
+.text{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.subtitle{
+    padding: 20px 30px 0px;
+    margin: 0px;
+    
+}
+
+.content{
+    font-size: 0.9em;
+    padding: 0px 30px;
+    margin: 0px;
+    //border: 1px solid yellow;
+}
+
+article h1{
+    color: var(--darkBlue);
+}
+
+article p{
+    color: var(--grayishBlue)
+}
+
+.grid{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 0px 20px;
+}
+
+.cardSupervisor{
+    border: 1px solid red;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.cardSupervisor::before{
+    content:"";
+    height: 4px;
+    display: block;
+    background:var(--Cyan);
+}
+
+.cardTeamBuilder{
+    //border: 1px solid red;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.cardTeamBuilder::before{
+    content:"";
+    height: 4px;
+    display: block;
+    background:var(--Red);
+}
+
+.cardCalculator{
+    //border: 1px solid red;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.cardCalculator::before{
+    content:"";
+    height: 4px;
+    display: block;
+    background:var(--Orange);
+}
+
+.cardKarma{
+    //border: 1px solid red;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.cardKarma::before{
+    content:"";
+    height: 4px;
+    display: block;
+    background:var(--Blue);
+}
+
+.picture{
+    //border: 1px solid yellow;
+    display: block;
+    text-align: right;
+    margin: 0px;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 480px){
+    .grid{
+        border: 1px solid red;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .grid{
+        border: 1px solid red;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .grid{
+        border: 1px solid red;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
