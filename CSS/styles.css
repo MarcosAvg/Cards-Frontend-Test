@@ -70,7 +70,7 @@ article p{
 }
 
 .cardSupervisor{
-    border: 1px solid red;
+    //border: 1px solid red;
     border-radius: 5px;
     overflow: hidden;
     background: white;
@@ -136,7 +136,7 @@ article p{
 
 @media screen and (min-width: 480px){
     .grid{
-        border: 1px solid red;
+        //border: 1px solid red;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -144,7 +144,7 @@ article p{
 
 @media screen and (min-width: 900px){
     .grid{
-        border: 1px solid red;
+        //border: 1px solid red;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -152,7 +152,7 @@ article p{
 
 @media screen and (min-width: 1200px){
     .grid{
-        border: 1px solid red;
+        //border: 1px solid red;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
